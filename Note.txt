@@ -1,0 +1,22 @@
+1. Adapun dokumentasi / catatan perkoding pada setiap modul pada folder application_1
+2. Selain modul c45_tree dan prediction itu semua tampilan sama.
+
+Tahap pembelajaran.
+Controllers
+ - Disini adalah letak sistem yang sebenarnya.semua yang tampil di sistem dimulai dari sini.
+ - Apabila function index di akses dan nama controller adalah dashboard.php . maka url nya http://sample/dashboard akan masuk kedalam function index.Selain index misal url http://sample/dashboard/add maka akan mengakses function add di dashboard.php tadi
+Models
+ - Model digunakan untuk meletakkan fungsi atau aturan main untuk select data dari database kedalam sistem yang akan digunakan pada controller
+Views
+ - Views adalah tampilan yang dipanggil pada sistem.Dimana base / standar tampilan dari file index.php dan setiap modul dipanggil akan tampil pada bagian $content_page menyesuaikan tampilan nya.
+
+Selain modul c45_tree dan prediction akan sama semua jenis tampilannya
+dengan rincian
+- dimulai dari controlers yang membaca index. dimana index akan menampilkan tampilan show.php . 
+- kemudian show.php dibawah memiliki function ajax yang akan meload function controller pada modul tersebut yang dinamakan function show() yang akan menampilkan table pada id html data yang sudah ada di halaman show.
+- kemudiann tampilah data tersebut dalam tabel.
+- apabila menekan / mengklik tombol tambah / add atau tombol ubah / edit pada table akan tampil modal yang berupa form untuk proses tambah atau ubah.
+- aksi tambah / ubah akan masuk pada function save dimana disitu akan dibedakan dengan variable mode tambah / ubah.
+- aksi tersebut menjadi pemicu apakah ini data insert atau update
+
+untuk c45_tree tampilan kurang lebih sama cuman terdapat beberapa rumus atau function untuk memperoleh data mining tersebut dengan teknik yang sudah diberikan. bisa dicek pada halaman controller nya, atau view nya.
